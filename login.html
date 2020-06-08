@@ -136,7 +136,7 @@ const password=$(`input[name="password"]`).get(0);
 $( "form" ).submit(inputValidationAndRedirection); 
 function inputValidationAndRedirection(event){
 event.preventDefault();
-if(username.value=="abcd" && password.value==12345){
+if(username.value=="admin" && password.value==12345){
     $(location).attr('href', 'index.html');
 }
 else{
