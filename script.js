@@ -68,7 +68,7 @@ todoListItem.on("change", ".checkbox", function () {
       resolve("Congrats. 5 Tasks have been Successfully Completed ");
     } else {
       reject(
-        `error`
+        `${5-countNewCompltetedTasks} more taks to be finished inorder to be successfull!`
       );
     }
   });
