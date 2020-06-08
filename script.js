@@ -66,7 +66,7 @@ todoListItem.on("change", ".checkbox", function () {
   let promise = new Promise(function (resolve, reject) {
     if (countNewCompltetedTasks == 5) {
       resolve("Congrats. 5 Tasks have been Successfully Completed ");
-    } else {
+    } else if(countNewCompltetedTasks<5){
       reject(
         `${5-countNewCompltetedTasks} more tasks to be completed inorder to be successful`
       );
